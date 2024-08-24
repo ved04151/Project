@@ -6,7 +6,7 @@ const databaseName = 'school_management';
 const connectionConfig = {
     host: 'localhost',
     user: 'root',
-    password: process.env.PASSWORD,
+    password: process.env.DB_PASSWORD,
 };
 
 // Create a MySQL connection (without specifying a database)
@@ -80,7 +80,7 @@ setupDatabase();
 const db = mysql.createPool({
     host: 'localhost', // Change this to your DB host
     user: 'root',      // Change this to your DB user
-    password: process.env.PASSWORD,      // Change this to your DB password
+    password: process.env.DB_PASSWORD,      // Change this to your DB password
     database: 'school_management'
 });
 
